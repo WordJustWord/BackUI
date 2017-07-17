@@ -1,0 +1,21 @@
+html{
+	height: 98%;
+}
+footer{
+	text-align: center;
+	font-size: 15px;
+	color: #919191;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.disscroll{
+	overflow: hidden;
+}
+.fullwindow{
+	width: 100%;
+	height: 100%;
+}
+
