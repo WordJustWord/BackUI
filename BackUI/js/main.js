@@ -13,4 +13,12 @@ $(function() {
 			});
 		}
 	});
+	$('#lbheadpic').click(function(e) {
+		$('#headMenu').menu(
+			'show', {
+				left: e.pageX,
+				top: e.pageY
+			}
+		)
+	});
 });

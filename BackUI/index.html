@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="mainback">
 
 	<head>
 		<meta charset="utf-8" />
@@ -14,7 +14,20 @@
 
 	<body style="min-width: 1024px;min-height: 768px;height: 100%;">
 		<div id="main" class="easyui-layout" style="width:100%;height:100%">
-			<div data-options="region:'north',split:false" style="height:100px;"></div>
+			<div data-options="region:'north',split:false" class="headimg">
+				<div class="logo"></div>
+				<div class="login">
+					<label for="headpic" id="lbheadpic">
+					<div id="headpic" class="headPic"></div></label>
+					<!--菜单-->
+					<div id="headMenu" class="easyui-menu" style="width:120px;">
+						<div>周主任，您好</div>
+						<div>我的备忘录</div>
+						<div>我的资料</div>
+						<div>注销</div>
+					</div>
+				</div>
+			</div>
 			<div data-options="region:'south',split:false" style="height:25px;">
 				<footer>BackUI版权所有©2107</footer>
 			</div>
@@ -24,11 +37,12 @@
 						<ul id="Sys_Dic" class="easyui-tree">
 							<li><span><a href="javascript:void(0)" class="NewTab" data-title="用户字典">用户字典</a></span></li>
 							<li><span><a href="javascript:void(0)" class="NewTab" data-title="系统字典">系统字典</a></span></li>
-							<li><span>File 13</span></li>
 						</ul>
 					</div>
 					<div title="权限管理" style="padding:10px;">
-						content2
+						<ul id="Sys_Right" class="easyui-tree">
+							<li><span><a href="javascript:void(0)" class="NewTab" data-title="权限管理">权限管理</a></span></li>
+						</ul>
 					</div>
 					<div title="用户管理">
 						<ul id="UserMangement" class="easyui-tree">
@@ -37,14 +51,17 @@
 						</ul>
 					</div>
 					<div title="日志记录">
-						content3
+						<ul id="Sys_Log" class="easyui-tree">
+							<li><span><a href="javascript:void(0)" class="NewTab" data-title="用户日志">用户日志</a></span></li>
+							<li><span><a href="javascript:void(0)" class="NewTab" data-title="系统日志">系统日志</a></span></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div data-options="region:'center'" style="height: 650px;">
 				<div id="main-tab" class="easyui-tabs" style="width:100%;height:100%;">
 					<div title="首页" style="padding:20px;display:none;">
-						tab1
+
 					</div>
 				</div>
 			</div>
